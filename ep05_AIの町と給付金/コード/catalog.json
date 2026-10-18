@@ -1,0 +1,19 @@
+{
+  "note": "品と値段は、論文の公開データ（給付の条件 w5/10007、0パルス目の prices.csv と transactions.csv）で確認した実際の値。日本語名はこちらで付けた。",
+  "items": [
+    {"key": "Tシャツ", "label": "Tシャツ", "price": 600, "kind": "日用品", "source": "Cotton T-Shirt"},
+    {"key": "食用油", "label": "食用油（1L）", "price": 260, "kind": "日用品", "source": "Cooking Oil (1 L)"},
+    {"key": "たばこ", "label": "たばこ（20本）", "price": 250, "kind": "日用品", "source": "Cigarettes (20 pc)"},
+    {"key": "洗剤", "label": "洗剤（500g）", "price": 220, "kind": "日用品", "source": "Detergent (500g)"},
+    {"key": "豆", "label": "豆（1kg）", "price": 180, "kind": "日用品", "source": "Lentils (1 kg)"},
+    {"key": "米", "label": "米（1kg）", "price": 120, "kind": "日用品", "source": "Rice (1 kg)"},
+    {"key": "砂糖", "label": "砂糖（1kg）", "price": 110, "kind": "日用品", "source": "Sugar (1 kg)"},
+    {"key": "即席めん", "label": "即席めん（5食）", "price": 100, "kind": "日用品", "source": "Instant Noodles (5pc)"},
+    {"key": "SIMチャージ", "label": "SIMチャージ", "price": 100, "kind": "日用品", "source": "SIM Topup (NPR 100)"},
+    {"key": "せっけん", "label": "せっけん", "price": 40, "kind": "日用品", "source": "Bar Soap"},
+    {"key": "サモサ", "label": "サモサ", "price": 60, "kind": "飲食", "source": "Samosa"},
+    {"key": "セルロティ", "label": "セルロティ（揚げパン）", "price": 80, "kind": "飲食", "source": "Sel Roti"},
+    {"key": "ビール", "label": "ビール（650ml）", "price": 380, "kind": "飲食", "source": "Tuborg (650ml)"},
+    {"key": "デラックスルーム", "label": "宿のデラックスルーム（1泊）", "price": 3500, "kind": "宿", "source": "Deluxe Room (night)"}
+  ]
+}

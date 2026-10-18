@@ -1,0 +1,1746 @@
+{
+ "source": "JMMLU (https://github.com/nlp-waseda/JMMLU) CC BY-SA 4.0",
+ "source_commit": "762cbf192c9e4588b574d718f95afd64c96fcbf4",
+ "seed": 20261004,
+ "selection": "下調べ（役割なし1回）で、1〜2モデルが間違えた問題。gpt-5.6-luna が間違えた候補を優先",
+ "problems": [
+  {
+   "id": "ACr014",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 14,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "次の監査証拠のうち、信頼性の保証が最も低いものはどれか?",
+   "A": "クライアントの顧客から受領した売掛金確認書",
+   "B": "クライアントの従業員が記入した、番号付きの受領報告書",
+   "C": "クライアントから入手した前月の銀行取引明細書",
+   "D": "クライアントの名前で作成された固定資産税の請求書。",
+   "answer": "B",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "ACr017",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 17,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "UCCの販売条に基づき、特定目的に対する黙示の適合性保証が物品販売取引においてどのように生じるかを最も適切に説明しているのは、次の状況のうちどれか?",
+   "A": "買い手が特定の目的のために商品を購入しており、適切な商品を選択するために売り手の技術または判断に依存している。",
+   "B": "買い手は特定の目的のために商品を購入しており、売り手はそのような商品の商人。",
+   "C": "売主は買主が商品を使用する特定の目的を知っており、買主が適切な商品を選択するために売主の技能または判断に依存していることを知っている。",
+   "D": "売主は買主が商品を使用する特定の目的を知っており、売主はそのような商品の商人。",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "ACr023",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 23,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "1日目に、商人であるJacksonは、Sandsに扇風機500台を1台10ドルで販売するというオファーを含む署名入りの手紙を郵送した。手紙は3日目にSandsによって受け取られた。手紙には、オファーを取り消さないという約束が含まれていたが、有効期限は含まれていなかった。4日目に、JacksonはSandsにファンを販売するオファーの取り消しを郵送した。Sandsは6日目に取り消しを受け取った。7日目に、SandsはJacksonにオファーの承諾を郵送した。Jacksonは9日目に承諾を受け取った。UCCの販売条項に基づいて、契約は成立したか?",
+   "A": "オファーに有効期限が記載されていなかったため、契約は成立しなかった。",
+   "B": "Sandsがオファーを受け入れる前にオファーの撤回を受けたため、契約は成立しなかった",
+   "C": "JacksonがSandsの承諾を受けた日に契約が成立した。",
+   "D": "契約は、SandsがJacksonに受領書を郵送した日に成立した。",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "ACr029",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 29,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "Vital社は発生主義による暦年課税のC法人である。2年目の連邦税引前帳簿利益は500,000ドルであった。この金額には以下の項目が含まれている。 1年目の州フランチャイズ税還付金50,000ドル 地方債利息収入 7500ドル 米国法人所得税申告書Form 1120のSchedule M-1で調整されるVital社の2年目の課税所得はいくらか?",
+   "A": "500,000ドル",
+   "B": "492,500ドル",
+   "C": "450,000ドル",
+   "D": "442,500ドル",
+   "answer": "B",
+   "screen_wrong": [
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "ACr030",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 30,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "ある実務家が、売りに出されている倉庫の面積が150,000平方フィートであるという経営者の主張について意見を述べることになった。実務家は、専門的な指針として、次のどの情報源を参照すべきか?",
+   "A": "監査基準書",
+   "B": "保証業務基準書",
+   "C": "会計・レビュー業務基準書",
+   "D": "コンサルティング業務基準書",
+   "answer": "B",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "ACr033",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 33,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "ロングは、個人事業主であるフロストの購買代理人であった。ロングはフロストのサプライヤーに発注する明確な権限を持っていた。ロングはインターネット上でビジネスを行い、フロストとはほとんど接触していなかった。フロストが司法手続きで無能力と宣告された後、ロングはフロストに代わってGrant社に発注した。ロングもGrant社もフロストが無能力であることを知らなかった。フロストまたはフロストの法定代理人は、Grant社に対して責任を負うか?",
+   "A": "はい、ロングの代理権はフロストが無能でも存続していたため。",
+   "B": "はい、フロストの無能力に関係なく命令は有効であったため。",
+   "C": "いいえ、Grant社はロングとしか取引していなかったため。",
+   "D": "いいえ、ロングには契約を締結する権限がなかったため。",
+   "answer": "D",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "ACr039",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 39,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "ある会社が、評価額50,000ドル、取得原価20,00ドルの土地を、公正価値55,000ドルの機械と交換した。この取引に商業的実体があると仮定した場合、交換差益はいくらになるか?",
+   "A": "0ドル",
+   "B": "5,000ドル",
+   "C": "30,000ドル",
+   "D": "35,000ドル",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "ACr044",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 44,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "ある納税者が、自身の生命保険契約を購入し、その所有者となり、2人の子供を同等の受取人に指定した。納税者はすべての保険料を支払っている。贈与税の対象となる財産の贈与があった場合、その贈与は何回行われたか?",
+   "A": "ゼロ。",
+   "B": "1。",
+   "C": "2。",
+   "D": "3。",
+   "answer": "A",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "ACr045",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 45,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "ウィンダミア市は、発電用の大型風車を数基建設することを決定した。建設資金は、今後10年間の一般住宅固定資産税の課税によって賄われる。光熱費収入は、風車に関連するすべての経費を相殺することを予定している。風車用の土地は地元の農家から市に寄付された。農家からの土地は、どの資金タイプに計上されるべきか?",
+   "A": "特別会計",
+   "B": "資本事業",
+   "C": "企業会計",
+   "D": "永久",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "ACr061",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 61,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "Star社はコンテンポラリー家具を専門とする小売店である。以下の情報はStar社の6月の予算から抜粋したものである： 売上高 540,000ドル 売上原価 300,000ドル 商品在庫 6月1日 150,000ドル 商品在庫 6月30日 180,000ドル 仕入勘定 6月1日 85,000ドル 仕入勘定 6月30日 75,000ドル Star社が6月の仕入のために現金支出として予算計上すべき金額はいくらか?",
+   "A": "260,000ドル",
+   "B": "280,000ドル",
+   "C": "320,000ドル",
+   "D": "340,000ドル",
+   "answer": "D",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "ACr065",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 65,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "Guldeが現金12,000ドルと土地10,000ドルの清算分配を受けた時点では、Chyme Partnershipに対するGuldeの課税標準は26,000ドルであり、Chymeに対する修正標準は10,000ドル、公正市場価値は30,000ドルであった。Chymeには、未実現利益、含み益のある棚卸資産、パートナーから拠出された不動産はなかった。Guldeの土地の基礎額はいくらか?",
+   "A": "0ドル",
+   "B": "10,000ドル",
+   "C": "14,000ドル",
+   "D": "30,000ドル",
+   "answer": "C",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "ACr067",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 67,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "後任監査人が前任監査人に監査契約締結後に提出を求めるものはどれか?",
+   "A": "重要な会計方針及び会計原則に関する前任監査人と経営者との間の意見の相違",
+   "B": "監査人交代の理由についての前任監査人の理解",
+   "C": "前任監査人が知っている、経営者の誠実性に関わる可能性のある事実",
+   "D": "当期と過年度の財務報告の整合性の評価を容易にする事項",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "ACr079",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 79,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "ある企業の新しい勤務時間処理では、時間給従業員は識別番号を選択し、出勤または退勤ボタンを選択する必要がある。このシステムを使用する従業員はビデオカメラで撮影される。新システムによって最も変化が少ないと考えられるエクスポージャーはどれか?",
+   "A": "従業員自身の勤務時間の不正報告",
+   "B": "従業員の残業時間計算の誤り",
+   "C": "従業員の勤務時間の不正確な計上",
+   "D": "他の従業員の勤務時間の記録",
+   "answer": "B",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "ACr083",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 83,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "Smile社は5月1日にコンピュータを12,000ドルで購入し、見積残存価額は1,500ドル、耐用年数は3年である。12月31日に終了した年度の二重定率法による減価償却費はいくらか?",
+   "A": "8,000ドル",
+   "B": "7,000ドル",
+   "C": "5,333ドル",
+   "D": "4,667ドル",
+   "answer": "C",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "ACr085",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 85,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "Cobb社の5月1日時点の在庫は200個で、総原価は1250ドルであった。Cobb社は定期棚卸法を採用している。当月の仕入は以下の通りである： 日付 個数 ユニットコスト 総原価 5月4日 20 5.80ドル 116.00ドル 5月17日 80 5.50ドル 440.00ドル Cobb社は5月14日に10個を120ドルで販売した。コブの5月の加重平均売上原価はいくらか?",
+   "A": "60.20ドル",
+   "B": "62.10ドル",
+   "C": "62.50ドル",
+   "D": "65ドル",
+   "answer": "A",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "ACr095",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 95,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "ある業界の競争価格よりも高い価格を外部顧客に設定する価格設定方針はどれか?",
+   "A": "談合価格設定",
+   "B": "二重価格設定",
+   "C": "略奪的価格設定",
+   "D": "移転価格設定",
+   "answer": "A",
+   "screen_wrong": [
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "ACr097",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 97,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "地方自治体の一般目的の外部財務報告において、必要な補足情報の一部とみなされるものはどれか?",
+   "A": "基金財務諸表",
+   "B": "結合非主要資金計算書",
+   "C": "財務諸表に対する注記",
+   "D": "経営成績の検討と分析",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "ACr105",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 105,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "会計検査基準による財務諸表の調整は次のどれに限られるか?",
+   "A": "GAAP以外の特別な目的の枠組みに準拠した会計データ",
+   "B": "GAAPで要求される開示を実質的にすべて省略した、未監査の財務諸表",
+   "C": "経営者の提示する財務諸表形式の情報",
+   "D": "調査・分析手続を経た補足的財務情報。",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "ACr131",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 131,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "Hall社は1月1日に140,000ドルで機械を購入した。この機械の見積耐用年数は8年で、残存価額は60,000ドルであった。Hall社は、二重定率法による減価償却を選択した。事業開始2年目の末日における、Hall社の貸借対照表上の機械の帳簿価額はいくらか?",
+   "A": "60,000ドル",
+   "B": "61,250ドル",
+   "C": "78,750ドル",
+   "D": "80,000ドル",
+   "answer": "C",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "ACr132",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 132,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "Largeは道路の会計処理に修正アプローチを使用していない。当年度の初めに、市は新しい道路に800,000ドルを支出した。道路の耐用年数は20年である。当年度の活動計算書において、Large市が新しい道路に関する費用として計上すべき金額はいくらか?",
+   "A": "0ドル",
+   "B": "20,000ドル",
+   "C": "40,000ドル",
+   "D": "800,000ドル",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "ACr134",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 134,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "S社の唯一の株主が、公正市場価値20,000ドル、基礎6,000ドル、負債12,000ドルの備品を寄贈した。株主が認識しなければならない利得がある場合、その額はいくらか?",
+   "A": "0ドル",
+   "B": "6,000ドル",
+   "C": "8,000ドル",
+   "D": "12,000ドル",
+   "answer": "B",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "ACr136",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 136,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "公認会計士が監査を実施する際に、デュー・ケアーの基準から無謀に逸脱した場合、公認会計士が知らない第三者に対して公認会計士はどのような責任を負うか?",
+   "A": "厳格責任法",
+   "B": "契約違反",
+   "C": "過失",
+   "D": "重大な過失",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "ACr146",
+   "subject": "専門会計",
+   "source_file": "professional_accounting.csv",
+   "row_index": 146,
+   "field": "会計",
+   "other_field": "物理学",
+   "question": "税務上、償却できないものはどれか?",
+   "A": "法人設立費用",
+   "B": "臨時取締役報酬",
+   "C": "株式発行費",
+   "D": "設立総会費用",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "CHr003",
+   "subject": "大学化学",
+   "source_file": "college_chemistry.csv",
+   "row_index": 3,
+   "field": "化学",
+   "other_field": "経済学",
+   "question": "ΔH＝ΔU＋PΔVの式は、次のどの場合に適用可能か?",
+   "A": "常に",
+   "B": "定圧プロセスのみ",
+   "C": "定温プロセスのみ",
+   "D": "定容プロセスのみ",
+   "answer": "B",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "CHr004",
+   "subject": "大学化学",
+   "source_file": "college_chemistry.csv",
+   "row_index": 4,
+   "field": "化学",
+   "other_field": "経済学",
+   "question": "ニトロニルニトロキシドは、不対電子が2つの等価な窒素核に結合した安定ラジカルである。J << aの剛性ニトロニルニトロキシドラジカルの溶液のEPRスペクトルには何本の線が現れるか?",
+   "A": "3本",
+   "B": "9本",
+   "C": "5本",
+   "D": "7本",
+   "answer": "B",
+   "screen_wrong": [
+    "openai",
+    "gemini"
+   ]
+  },
+  {
+   "id": "CHr007",
+   "subject": "大学化学",
+   "source_file": "college_chemistry.csv",
+   "row_index": 7,
+   "field": "化学",
+   "other_field": "経済学",
+   "question": "ジメチルスルホキシド(DMSO)とアセトニトリル(AN)の混合物の1Hスペクトルには、それぞれ相対強度αと3αの線が含まれている。[DMSO]：[AN]の2つの濃度の比は?",
+   "A": "1:1",
+   "B": "1:3",
+   "C": "1:6",
+   "D": "2:3",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "CHr008",
+   "subject": "大学化学",
+   "source_file": "college_chemistry.csv",
+   "row_index": 8,
+   "field": "化学",
+   "other_field": "経済学",
+   "question": "原子核のT1がT2より長いことがある理由を最も正確に説明しているのは次のうちどれか?",
+   "A": "T1はT2とは異なり、非常に低い周波数の分子運動に敏感。",
+   "B": "T2はT1とは異なり、非常に低い周波数の分子運動に敏感。",
+   "C": "T1はT2とは異なり、ラーモア周波数の分子運動に敏感。",
+   "D": "T2はT1とは異なり、ラーモア周波数の分子運動に敏感。",
+   "answer": "D",
+   "screen_wrong": [
+    "openai",
+    "gemini"
+   ]
+  },
+  {
+   "id": "CHr011",
+   "subject": "大学化学",
+   "source_file": "college_chemistry.csv",
+   "row_index": 11,
+   "field": "化学",
+   "other_field": "経済学",
+   "question": "シクロブチルラジカル(C4H7•)のβ-ハイパーファインの値を、ラジカルが平坦で、HCH角が115°であると仮定して推定せよ。",
+   "A": "4.6 mT",
+   "B": "27 G",
+   "C": "5.4 mT",
+   "D": "3.8 mT",
+   "answer": "A",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "CHr025",
+   "subject": "大学化学",
+   "source_file": "college_chemistry.csv",
+   "row_index": 25,
+   "field": "化学",
+   "other_field": "経済学",
+   "question": "ラウールの法則に従う二元液体混合物について、次のうちどれが正しいか? \nI. 平衡における各成分の分圧は、液体混合物中のモル分率に比例する。\nII. 混合物の体積は、混合前の各成分の体積の和に等しい。\nIII. 混合物の分子間相互作用は、純粋成分の分子間相互作用と同じである。",
+   "A": "I のみ",
+   "B": "III のみ",
+   "C": "I と III のみ",
+   "D": "IとIIと III",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "CHr038",
+   "subject": "大学化学",
+   "source_file": "college_chemistry.csv",
+   "row_index": 38,
+   "field": "化学",
+   "other_field": "経済学",
+   "question": "次の化合物のうち、最も低い融点をもつのはどれか?",
+   "A": "HCl",
+   "B": "AgCl",
+   "C": "CaCl2",
+   "D": "CCl4",
+   "answer": "A",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "CHr042",
+   "subject": "大学化学",
+   "source_file": "college_chemistry.csv",
+   "row_index": 42,
+   "field": "化学",
+   "other_field": "経済学",
+   "question": "ある分子の1Hエネルギー準位の平衡個体群はnα = nαeqとnβ = nβeqである。B1 = 4.697 mTのとき、5.0 μsのパルス後の個体群は?",
+   "A": "nα = nβeq、nβ = nαeq",
+   "B": "nα = nαeq、nβ = nβeq",
+   "C": "nα = ½(nαeq + nβeq)、nβ = ½(nαeq + nβeq)",
+   "D": "nα = nαeq+nβeq、nβ = nαeq+nβeq",
+   "answer": "A",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "CHr061",
+   "subject": "大学化学",
+   "source_file": "college_chemistry.csv",
+   "row_index": 61,
+   "field": "化学",
+   "other_field": "経済学",
+   "question": "未知の核種の磁気モーメント(μI)は2.884 x 10^-27 J T-1である。核スピンが1であることが知られている場合、未知の核種を特定せよ。",
+   "A": "14N",
+   "B": "2H",
+   "C": "19F",
+   "D": "6Li",
+   "answer": "B",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "ECr015",
+   "subject": "計量経済学",
+   "source_file": "econometrics.csv",
+   "row_index": 15,
+   "field": "経済学",
+   "other_field": "電気工学",
+   "question": "三角系または再帰系に関して正しい記述は次のうちどれか?\n\ni) パラメータは、各方程式にOLSを個別に適用することで、\n\n有効に推定できる。\n\n\nii)独立変数は、他の\n\nequations\n\n\niii)2SLSを適用すると、バイアスはないが非効率的なパラメータ推定値が得られる。\n\n\niv)独立変数は、独立変数として表示される方程式の\n\n誤差項と相関させることができる。",
+   "A": "(ii)(iv) のみ",
+   "B": "(i)(iii) のみ",
+   "C": "(i)(ii)(iii) のみ",
+   "D": "(i)(ii)(iii)(iv) すべて",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "ECr018",
+   "subject": "計量経済学",
+   "source_file": "econometrics.csv",
+   "row_index": 18,
+   "field": "経済学",
+   "other_field": "電気工学",
+   "question": "MA 過程 \n\n$y_t = -3u_{t-1} + u_{t-2} + u_t$\n\n の特性根は次のうちどれか?",
+   "A": "1 と 2",
+   "B": "1 と 0.5",
+   "C": "2 と -0.5",
+   "D": "1 と -3",
+   "answer": "B",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "ECr030",
+   "subject": "計量経済学",
+   "source_file": "econometrics.csv",
+   "row_index": 30,
+   "field": "経済学",
+   "other_field": "電気工学",
+   "question": "GARCHモデルの文脈における最尤(ML)推定に関して、次の記述のうち正しいものはどれか?\n\ni)最尤推定では、\n\n実際に我々が行った系列yの値を実際に観測したであろう\n\n確率を最大化するパラメータ値を選択する。\n\n\nii)GARCHモデルはMLによってのみ推定でき、OLSによっては推定できません\n\n\niii)標準線形モデル(GARCHなし)の推定では、勾配パラメータと切片パラメータのOLSとML\n\n推定値は同一だが、外乱の分散の推定量\n\nはわずかに異なる\n\n\niv)ほとんどのコンピュータパッケージでは、GARCHモデルを推定するために\n\n一連の解析式よりも数値手順を使用する",
+   "A": "(ii)(iv) のみ",
+   "B": "(i)(iii) のみ",
+   "C": "(i)(ii)(iii) のみ",
+   "D": "(i)(ii)(iii)(iv) すべて",
+   "answer": "D",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "ECr031",
+   "subject": "計量経済学",
+   "source_file": "econometrics.csv",
+   "row_index": 31,
+   "field": "経済学",
+   "other_field": "電気工学",
+   "question": "回帰式の右辺に従属変数の関連するラグ値を含めると、次のどれになるか?",
+   "A": "バイアスはかかっているが一貫性のある係数推定値",
+   "B": "バイアスはかかっているが一貫性のない係数推定値",
+   "C": "バイアスはかかっておらず一貫性のない係数推定値",
+   "D": "バイアスはかかっておらず一貫性もあるが非効率的な係数推定値",
+   "answer": "A",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "ECr034",
+   "subject": "計量経済学",
+   "source_file": "econometrics.csv",
+   "row_index": 34,
+   "field": "経済学",
+   "other_field": "電気工学",
+   "question": "自己回帰プロセスが定常的であるとみなされるためには、以下のどれが正しいか?",
+   "A": "特徴方程式の根はすべて単位円の内側になければならない",
+   "B": "特徴方程式の根はすべて単位円上になければならない",
+   "C": "特徴方程式の根はすべて単位円の外側になければならない",
+   "D": "特徴方程式の根はすべて絶対値が1より小さくなければならない",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "ECr069",
+   "subject": "計量経済学",
+   "source_file": "econometrics.csv",
+   "row_index": 69,
+   "field": "経済学",
+   "other_field": "電気工学",
+   "question": "ホワイトノイズプロセスが持つのは次のうちどれか?\n\n(i)ゼロ平均\n\n(ii)一定分散\n\n(iii)一定である自己共分散\n\n(iv)ラグゼロを除いてゼロである自己共分散",
+   "A": "(ii)(iv) のみ",
+   "B": "(i)(iii) のみ",
+   "C": "(i)(ii)(iii) のみ",
+   "D": "(i)(ii)(iii)(iv) すべて",
+   "answer": "A",
+   "screen_wrong": [
+    "openai",
+    "gemini"
+   ]
+  },
+  {
+   "id": "ECr071",
+   "subject": "計量経済学",
+   "source_file": "econometrics.csv",
+   "row_index": 71,
+   "field": "経済学",
+   "other_field": "電気工学",
+   "question": "次のうち、残存する非正規性の所見に対する妥当な反応はどれか?",
+   "A": "線形関数形の代わりに対数関数形を使用する",
+   "B": "回帰モデルの右辺に変数のラグを追加する",
+   "C": "第1の差分形式でモデルを推定する",
+   "D": "データから大きな外れ値を除去する",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "ECr091",
+   "subject": "計量経済学",
+   "source_file": "econometrics.csv",
+   "row_index": 91,
+   "field": "経済学",
+   "other_field": "電気工学",
+   "question": "次のうち、自己相関残差をもたらす可能性があるものはどれか?\n\ni)独立変数の値の変化に対する従属変数の反応の遅さ\n\nii)独立変数の変化に対する従属変数の過剰反応\n\niii)自己相関する関連説明変数の省略\n\niv)データの外れ値",
+   "A": "(ii)(iv) のみ",
+   "B": "(i)(iii) のみ",
+   "C": "(i)(ii)(iii) のみ",
+   "D": "(i)(ii)(iii)(iv) すべて",
+   "answer": "C",
+   "screen_wrong": [
+    "openai",
+    "gemini"
+   ]
+  },
+  {
+   "id": "ECr101",
+   "subject": "計量経済学",
+   "source_file": "econometrics.csv",
+   "row_index": 101,
+   "field": "経済学",
+   "other_field": "電気工学",
+   "question": "問 21 で与えられたモデルの切片項の95％(両側)信頼区間として最も適切なものはどれか?",
+   "A": "(-4.79,2.19)",
+   "B": "(-4.16,4.16)",
+   "C": "(-1.98,1.98)",
+   "D": "(-5.46,2.86)",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "ECr104",
+   "subject": "計量経済学",
+   "source_file": "econometrics.csv",
+   "row_index": 104,
+   "field": "経済学",
+   "other_field": "電気工学",
+   "question": "250 個のデータポイントを用いて得られた以下の標本自己相関推定値を考えよ。\n\n1) ラグ 1 2 3\n\n2) 係数 0.2 -0.15 -0.1\n\n3) 係数がほぼ正規分布していると仮定すると、5%水準で統計的に有意な係数はどれか?",
+   "A": "1 のみ",
+   "B": "1 と 2 のみ",
+   "C": "1、2、3 のみ",
+   "D": "標準誤差が与えられていないので、統計的有意性を判断することはできない。",
+   "answer": "B",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "ECr106",
+   "subject": "計量経済学",
+   "source_file": "econometrics.csv",
+   "row_index": 106,
+   "field": "経済学",
+   "other_field": "電気工学",
+   "question": "モンテカルロ実験の一部としての反合成変量の使用に関して、次の記述のうち正しいものはどれか?\n\ni)反合成変量は、確率空間全体をカバーするために必要な反復回数を減らすことで機能する\n\nii)反合成変量は、シミュレーションで使用されたものと同様の変数を使用するが、その特性は分析的に知られている\n\niii)反合成変量は、各ランダムドローの負の値を使用し、それらの値をドローとして使用して実験を繰り返すことを含む\n\niv)反合成変量は、各ランダムドローに対して1つを取り、それらの値をドローとして使用して実験を繰り返すことを含む",
+   "A": "(ii)(iv) のみ",
+   "B": "(i)(iii) のみ",
+   "C": "(i), (ii), (iv) のみ",
+   "D": "(i)(ii)(iii)(iv) すべて",
+   "answer": "B",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "ECr108",
+   "subject": "計量経済学",
+   "source_file": "econometrics.csv",
+   "row_index": 108,
+   "field": "経済学",
+   "other_field": "電気工学",
+   "question": "標準(「プレーンなバニラ」)GARCHモデルに対する次の批判のうち、EGARCHモデルで克服できるものはどれか?\n\ni) GARCHモデルからの推定係数値は負の値となる可能性がある\n\nii)GARCHモデルはレバレッジ効果を考慮できない\n\niii)正と負のショックに対する将来のボラティリティの反応性は、GARCHの定式化の下では対称的\n\niv)GARCHモデルはボラティリティからリターンへのフィードバックを考慮できない",
+   "A": "(ii)(iv) のみ",
+   "B": "(i)(iii) のみ",
+   "C": "(i)(ii)(iii) のみ",
+   "D": "(i)(ii)(iii)(iv) すべて",
+   "answer": "C",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "EEr003",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 3,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "入力が制御サブシステムに与える影響を示すボックスは、何と呼ばれているか?",
+   "A": "データボックス",
+   "B": "論理ボックス",
+   "C": "決定ボックス",
+   "D": "状態ボックス",
+   "answer": "C",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "EEr010",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 10,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "赤色の蛍光を発する蛍光物質の名前は何か?",
+   "A": "ケイ酸亜鉛。",
+   "B": "ケイ酸カルシウム。",
+   "C": "硫化亜鉛。",
+   "D": "ケイ酸マグネシウム。",
+   "answer": "D",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "EEr029",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 29,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "最低臨界周波数は極によるものであり、原点または原点に近い位置に存在する可能性がある場合、ネットワークのタイプは?",
+   "A": "LC",
+   "B": "RL",
+   "C": "RC",
+   "D": "上記のいずれか",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "EEr057",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 57,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "自動制御システムとして知られているものはどれか?",
+   "A": "開ループ制御システム",
+   "B": "閉ループ制御システム",
+   "C": "AまたはBのどちらか",
+   "D": "AでもBでもない",
+   "answer": "B",
+   "screen_wrong": [
+    "openai",
+    "gemini"
+   ]
+  },
+  {
+   "id": "EEr060",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 60,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "ケーブルの長さが2倍になると、静電容量Cは?",
+   "A": "4分の1。",
+   "B": "2分の1。",
+   "C": "2倍。",
+   "D": "変化なし。",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "EEr064",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 64,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "直接鉄心型誘導炉では、以下のどの理由から低周波供給が必要か?",
+   "A": "通常の周波数供給では、電磁力は溶融金属中で激しい撹はん作用を引き起こすため。",
+   "B": "一次回路と二次回路の間の磁気結合は貧弱なため。",
+   "C": "AとBの両方。",
+   "D": "上記のいずれでもない。",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "EEr070",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 70,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "力-電流の相似におけるダッシュ・ポットの電気的相似量は?",
+   "A": "抵抗。",
+   "B": "コンダクタンス。",
+   "C": "インダクタンス。",
+   "D": "キャパシタンス。",
+   "answer": "B",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "EEr085",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 85,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "単相フルブリッジインバータは、負荷が以下のうちどれで構成される場合、負荷整流モードで動作することができるか?",
+   "A": "RL。",
+   "B": "RLCアンダーダンピング。",
+   "C": "RLCオーバーダンピング。",
+   "D": "RLC臨界減衰。",
+   "answer": "B",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "EEr093",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 93,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "直流機では6極波巻線が使用される。並列経路の数は?",
+   "A": "6",
+   "B": "4",
+   "C": "2",
+   "D": "1",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "EEr094",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 94,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "次のうち、デジタル装置はどれか?",
+   "A": "扇風機のレギュレータ",
+   "B": "マイクロフォン",
+   "C": "材料の抵抗",
+   "D": "照明スイッチ",
+   "answer": "D",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "EEr104",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 104,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "最低臨界周波数が0によるものであり、原点または原点に近い位置に存在する可能性がある場合のネットワークのタイプは?",
+   "A": "LC回路。",
+   "B": "RC回路。",
+   "C": "RLC回路。",
+   "D": "RL回路。",
+   "answer": "D",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "EEr109",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 109,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "磁場中の導体断面積の変化が影響を及ぼすものを以下から選択せよ。",
+   "A": "導体の磁気抵抗。",
+   "B": "導体の抵抗。",
+   "C": "（A）と（B）の両方。",
+   "D": "上記のいずれでもない。",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "EEr112",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 112,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "電気通信の4Gネットワークにおけるデータ伝送速度は?",
+   "A": "386kbps～2mbps。",
+   "B": "2mbps。",
+   "C": "2mbps～1gbps。",
+   "D": "100mbps～1gbps。",
+   "answer": "D",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "EEr119",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 119,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "サイリスタの保持電流が2mAのときのラッチ電流は?",
+   "A": "0.01A。",
+   "B": "0.002A。",
+   "C": "0.009A。",
+   "D": "0.004A。",
+   "answer": "D",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "EEr127",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 127,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "2電力計の電力測定方法では、総電力が1つの電力計のみで測定される場合のシステムの力率は?",
+   "A": "0。",
+   "B": "0.5。",
+   "C": "1。",
+   "D": "上記のいずれでもない。",
+   "answer": "B",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "EEr132",
+   "subject": "電気工学",
+   "source_file": "electrical_engineering.csv",
+   "row_index": 132,
+   "field": "電気工学",
+   "other_field": "論理学",
+   "question": "送電線の安定性を向上させるものは?",
+   "A": "分路コンデンサ",
+   "B": "直列コンデンサ",
+   "C": "分路リアクトル",
+   "D": "AとBの両方",
+   "answer": "D",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "LOr008",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 8,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "次の文の最も良い記号化は、与えられたPLの式のどれか?\n誰もがレイモンドを愛しているかどうか。",
+   "A": "L",
+   "B": "~L",
+   "C": "L • ~L",
+   "D": "L ∨ ~L",
+   "answer": "D",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "LOr015",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 15,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "次の条件付き命題の前件部を識別せよ。ただし、大学は、知事が承認し、理事会が推奨した場合に限り、授業料を引き上げる。",
+   "A": "大学が授業料を値上げする。",
+   "B": "知事がそれを承認する。",
+   "C": "理事会が推奨する。",
+   "D": "上記のいずれでもない。",
+   "answer": "D",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "LOr020",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 20,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "述語論理への最適な変換を選択せよ。マルコはイタリアからスペインに移動する。(i: イタリア、m: マルコ、s: スペイン、Mxyz: xがzからyに移動する）",
+   "A": "Msim",
+   "B": "Mmis",
+   "C": "Mims",
+   "D": "Mmsi",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "LOr023",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 23,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "与えられたPLの式のうち、次の文の記号化として最も適切なものはどれか?\nパブロが買い物に行くのは、兄が運転し、ガソリン代を払う場合だけである。",
+   "A": "(P ≡ D) ≡ G",
+   "B": "(D • G) ⊃ P",
+   "C": "P ⊃ (D • G)",
+   "D": "P ≡ (D • G)",
+   "answer": "D",
+   "screen_wrong": [
+    "openai",
+    "gemini"
+   ]
+  },
+  {
+   "id": "LOr042",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 42,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "次の命題の組について、完全な真理値表を作成せよ。次に、真理値表を使って、その文が論理的に等価か矛盾かを判断せよ。どちらにも当てはまらない場合、それらが一貫しているか矛盾しているかを判断せよ。答えを正当化せよ。\n~O ⊃ P およびO ∨ P",
+   "A": "論理的に等価",
+   "B": "矛盾",
+   "C": "論理的に等価でも矛盾でもないが、一貫性がある",
+   "D": "一貫性がない",
+   "answer": "A",
+   "screen_wrong": [
+    "openai",
+    "gemini"
+   ]
+  },
+  {
+   "id": "LOr043",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 43,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "間接真理値表を使って、以下の引数が有効かどうかを判断せよ。引数が無効な場合は、反例を示す選択肢を選べ。（他にも反例がある可能性がある。）\n(T · ~U) ⊃ ~W\n~W ⊃ X\n~Z ⊃ W\n~(X · Z) / T ⊃ U",
+   "A": "有効",
+   "B": "無効。 T、X、Zが真でUとWが偽の場合の反例",
+   "C": "無効。TとXが真でUとWとZが偽の場合の反例",
+   "D": "無効。T、W、Zが真でUとXが偽の場合の反例",
+   "answer": "A",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "LOr044",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 44,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "述語論理への最適な変換を選択せよ。マリアが問題か少女である場合に限り、セシリアは私の心を傷つける。",
+   "A": "Bc ≡ (Pm ∨ Gm)",
+   "B": "Bc ≡ (Pm • Gm)",
+   "C": "Bc ⊃ (Pm ∨ Gm)",
+   "D": "Cb ⊃ (Pm • Gm)",
+   "answer": "A",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "LOr047",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 47,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "間接真理値表を使用して、次の引数が有効かどうかを判断せよ。引数が無効な場合は、反例を示すオプションを選択せよ。(他の反例もある場合がある。)\n(A ∨ B) ⊃ C\nC ⊃ ~D / D ⊃ A",
+   "A": "有効",
+   "B": "無効。B、C、およびDが真でAが偽の場合の反例",
+   "C": "無効。BとDが真で、AとCが偽の場合の反例",
+   "D": "無効。A、B、およびCが偽で、Dが真の場合の反例",
+   "answer": "D",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "LOr058",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 58,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "与えられたPLの式のうち、次の文の記号化として最も適切なものはどれか?\nイギリスが牛肉を輸入することは、フランスが農業に補助金を出すための十分条件であるか、あるいは、南アフリカがダイヤモンドを供給するときに限り、中国は人権を推進しない。",
+   "A": "(E ⊃ F) ∨ (~C ⊃ S)",
+   "B": "(F ⊃ E) ∨ (S ⊃ ~C",
+   "C": "(E ⊃ F) ∨ ~(S ≡ C)",
+   "D": "(E ⊃ F) ∨ (~C ≡ S)",
+   "answer": "D",
+   "screen_wrong": [
+    "openai",
+    "gemini"
+   ]
+  },
+  {
+   "id": "LOr064",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 64,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "述語論理への最適な変換を選択せよ。ケビンはウィルマにホセを紹介された。(j: ホセ、k: ケビン、w: ウィルマ、Ixyz: xがyをzに紹介する)",
+   "A": "Iwjk",
+   "B": "Ijkw",
+   "C": "Ikjw",
+   "D": "Iwkj",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "LOr073",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 73,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "述語論理への最適な変換を選択せよ。リロイが悪いのは、DJキャレドが彼の名前を叫んだ場合だけである。",
+   "A": "Sk ≡ Bl",
+   "B": "Bl ≡ Sk",
+   "C": "Bx ⊃ Sy",
+   "D": "Bl ⊃ Sk",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "LOr076",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 76,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "述語論理への最適な変換を選択せよ。動物の中には残酷な人々に無視されるものもいる。(Ax: xは動物、Cx: xは残酷、Px: xは人、Nxy: xはyを無視する)",
+   "A": "(∃x)[(Ax • Cx) • (∃y)(Py • Nyx)]",
+   "B": "(∃x)[(Cx • Px) • (∃y)(Ay • Nxy)]",
+   "C": "(∃x)[(Ax • Px) • (∃y)(Cy • Nxy)]",
+   "D": "(∃x)(∃y){[(Ax • Cy) • Py] • Nxy)]}",
+   "answer": "B",
+   "screen_wrong": [
+    "openai",
+    "gemini"
+   ]
+  },
+  {
+   "id": "LOr080",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 80,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "次の引数の完全な真理値表を作成せよ。次に、真理値表を使用して、引数が有効かどうかを判断せよ。引数が無効な場合は、反例を示すオプションを選択せよ(他の反例もある可能性がある)。\n~A·~B\n(A∨C)∨B/C",
+   "A": "有効",
+   "B": "無効。AとBが真でCが偽の場合の反例",
+   "C": "無効。Aが真で、BとCが偽の場合の反例",
+   "D": "無効。Bが真で、AとCが偽の場合の反例",
+   "answer": "A",
+   "screen_wrong": [
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "LOr082",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 82,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "次の議論の結論を明らかにせよ。功利主義的な理論は、効用モンスターの可能性に困惑している。効用モンスターは、他の人の犠牲によって失われる効用よりも、莫大な効用の利益を得る。他の多くの人の犠牲よりも、効用モンスターの利益の方が大きい。この理論では、全体的な効用を高めるために、私たち全員がモンスターの胃の中で犠牲になることが必要なようである(ロバート・ノージック、『アナーキー、国家、ユートピア』)。",
+   "A": "功利主義的な理論は、効用モンスターの可能性に困惑している。",
+   "B": "効用モンスターは、効用から莫大な利益を得る。",
+   "C": "効用モンスターは、他者の犠牲によって失われた効用よりも、より大きな効用の利益を得る。",
+   "D": "たとえ多数の他の人々の犠牲であっても、ユーティリティモンスターの利益はそれを上回る。",
+   "answer": "A",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "LOr090",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 90,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "次の条件付き命題の前件部を特定せよ。大学が授業料を値上げするのは、知事がそれを承認し、理事会がそれを推奨する場合のみである。",
+   "A": "大学が授業料を値上げする。",
+   "B": "知事がそれを承認する。",
+   "C": "理事会がそれを推奨する。",
+   "D": "知事がそれを承認し、理事会が推奨する。",
+   "answer": "A",
+   "screen_wrong": [
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "LOr098",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 98,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "次の命題の組について、完全な真理値表を作成せよ。次に、真理値表を使って、その文が論理的に等価か矛盾かを判断せよ。どちらにも当てはまらない場合、それらが一貫しているか矛盾しているかを判断せよ。答えを正当化せよ。\n(G ∨ ~H) ⊃ G かつ ~G ≡ (~H · G)",
+   "A": "論理的に等価",
+   "B": "矛盾する",
+   "C": "論理的に等価でも矛盾でもないが、一貫している",
+   "D": "一貫性がない",
+   "answer": "C",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "LOr107",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 107,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "間接真理値表を使って、以下の引数が有効かどうかを判断せよ。引数が無効な場合は、反例を示す選択肢を選べ。（他の反例もある可能性がある。）\nH ≡ (I · ~J)\nK ≡ ~H\n~(K ⊃ J) / I ≡ J",
+   "A": "有効",
+   "B": "無効。I、H、Kが真でJが偽の場合の反例",
+   "C": "無効。IとHが真でJとKが偽の場合の反例",
+   "D": "無効。Kが真でI,H,Jが偽の場合の反例",
+   "answer": "A",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "LOr112",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 112,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "次の議論の結論を明らかにせよ。歴史的な観点から、遺伝学は若い科学である。遺伝形質を支配する原理が記述されてから150年もたっていない。さらに20世紀に入る頃、遺伝の法則が再発見された。しかし、それでもDNAの重要性が本当に理解されたのは1950年代になってからである。",
+   "A": "しかし、それでもDNAの重要性は1950年代まで実際に理解されていなかった。",
+   "B": "DNAの重要性が本当に理解されたのは1950年代になってからである。",
+   "C": "歴史的に見て、遺伝学は若い科学である。",
+   "D": "遺伝形質を支配する原理は、150年も前には説明されていなかった。",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "LOr119",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 119,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "次の文の記号化として最も適切なのは、与えられたPLの公式のうちどれか?\nイギリスが牛肉を輸入しないことはフランスが農業に補助金を出すための必要条件であるか、あるいは南アフリカがダイヤモンドを供給しない場合に限り、中国は人権を推進するかのどちらかである。",
+   "A": "(F ⊃ ~E) ∨ (C ≡ ~S)",
+   "B": "(~E ⊃ F) ∨ (C ⊃ ~S)",
+   "C": "~(F ⊃ E) ∨ (~S ⊃ C)",
+   "D": "(F ⊃ E) ∨ (C ≡ ~S)",
+   "answer": "A",
+   "screen_wrong": [
+    "openai",
+    "gemini"
+   ]
+  },
+  {
+   "id": "LOr122",
+   "subject": "形式論理",
+   "source_file": "formal_logic.csv",
+   "row_index": 122,
+   "field": "論理学",
+   "other_field": "化学",
+   "question": "次の引数について完全な真理値表を作成せよ。次に、真理値表を用いて、その引数が有効か無効かを判断せよ。引数が無効な場合は、反例を示す選択肢を選べ。（他の反例がある可能性もある。）\n~(M ≡ ~N) \nM / N",
+   "A": "有効",
+   "B": "無効。MとNが真のときの反例",
+   "C": "無効。Mが真でNが偽の場合の反例",
+   "D": "無効。Nが真でMが偽の場合の反例",
+   "answer": "A",
+   "screen_wrong": [
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "MAr008",
+   "subject": "大学数学",
+   "source_file": "college_mathematics.csv",
+   "row_index": 8,
+   "field": "数学",
+   "other_field": "医学",
+   "question": "次のうち正しいものはどれか?",
+   "A": "すべてのコンパクト空間は完全",
+   "B": "すべての完備空間はコンパクト",
+   "C": "(a)と(b)のどちらでもない。",
+   "D": "(a)と(b)の両方。",
+   "answer": "A",
+   "screen_wrong": [
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "MAr038",
+   "subject": "大学数学",
+   "source_file": "college_mathematics.csv",
+   "row_index": 38,
+   "field": "数学",
+   "other_field": "医学",
+   "question": "ユークリッド平面上の凸10角形における鋭角の最大数はどれか?",
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4",
+   "answer": "C",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "MAr045",
+   "subject": "大学数学",
+   "source_file": "college_mathematics.csv",
+   "row_index": 45,
+   "field": "数学",
+   "other_field": "医学",
+   "question": "xy平面の第1象限にある曲線y = xとy = x^2で囲まれた領域をy軸を中心に回転させる。結果として生じる回転立体の体積は次のうちどれか?",
+   "A": "π/12",
+   "B": "π/6",
+   "C": "π/3",
+   "D": "2π/3",
+   "answer": "B",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "MAr048",
+   "subject": "大学数学",
+   "source_file": "college_mathematics.csv",
+   "row_index": 48,
+   "field": "数学",
+   "other_field": "医学",
+   "question": "f:R->Rがルベーグ可積分の有界関数である場合、次のうちどれが真でなければならないか?",
+   "A": "fはリーマン可積分。",
+   "B": "Eのすべてのxでfが微分不可能であるようなRの可算無限Eは存在しない。",
+   "C": "Eのすべてのxでfが微分不可能であるようなRの非可算部分集合Eは存在しない。",
+   "D": "上記のいずれでもない。",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "MAr051",
+   "subject": "大学数学",
+   "source_file": "college_mathematics.csv",
+   "row_index": 51,
+   "field": "数学",
+   "other_field": "医学",
+   "question": "Sをコンパクトな位相空間、Tを位相空間、fをSからTへの関数とする。fに関する次の条件のうち、Tのコンパクトさを保証するのに十分な最も弱い条件はどれか?",
+   "A": "fは同相。",
+   "B": "fは連続かつ一対一。",
+   "C": "fは連続。",
+   "D": "fは一対一。",
+   "answer": "C",
+   "screen_wrong": [
+    "openai"
+   ]
+  },
+  {
+   "id": "MAr053",
+   "subject": "大学数学",
+   "source_file": "college_mathematics.csv",
+   "row_index": 53,
+   "field": "数学",
+   "other_field": "医学",
+   "question": "nの値に対して、同型までの位数nのアーベル群がちょうど2つ存在するのはどれか?",
+   "A": "4",
+   "B": "7",
+   "C": "8",
+   "D": "12",
+   "answer": "A",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "MAr068",
+   "subject": "大学数学",
+   "source_file": "college_mathematics.csv",
+   "row_index": 68,
+   "field": "数学",
+   "other_field": "医学",
+   "question": "今日が水曜日だとする。今から10^(10^(10))日後の曜日は?",
+   "A": "日曜日",
+   "B": "月曜日",
+   "C": "火曜日",
+   "D": "水曜日",
+   "answer": "A",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "MAr069",
+   "subject": "大学数学",
+   "source_file": "college_mathematics.csv",
+   "row_index": 69,
+   "field": "数学",
+   "other_field": "医学",
+   "question": "逆さ円錐の頂点にある穴から、毎分3cm^3の割合で水が滴り落ちている。\n円錐の高さは2cm、半径は1cmである。\n水位が円錐の頂上から半センチメートル下にあるとき、水の高さはどのくらいの割合で変化するか? 円錐の体積は V = (π/3)*r^2*h であり、\nr は半径、h は円錐の高さである。",
+   "A": "-48/π cm/min",
+   "B": "-4/(3π) cm/min",
+   "C": "-8/(3π) cm/min",
+   "D": "-16/(3π) cm/min",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "MAr083",
+   "subject": "大学数学",
+   "source_file": "college_mathematics.csv",
+   "row_index": 83,
+   "field": "数学",
+   "other_field": "医学",
+   "question": "すべての実数xとyに対して、f(x, y)=x^3+y^3+3xyとする。この場合、fが次のうち何を持つ異なる点PとQが存在するか?",
+   "A": "PとQで局所最大",
+   "B": "PとQで鞍点",
+   "C": "Pで局所最大、Qで鞍点",
+   "D": "Pで局所最小、Qで鞍点",
+   "answer": "C",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "MAr084",
+   "subject": "大学数学",
+   "source_file": "college_mathematics.csv",
+   "row_index": 84,
+   "field": "数学",
+   "other_field": "医学",
+   "question": "Aが実数直線Rの部分集合であり、Aがそれぞれの有理数を含む場合、次のうちどれが真でなければならないか?",
+   "A": "Aが開いている場合、A=R。",
+   "B": "Aが閉じている場合、A=R。",
+   "C": "Aが数えられない場合、A=R。",
+   "D": "Aが数えられない場合、Aは開いている。",
+   "answer": "B",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "MAr095",
+   "subject": "大学数学",
+   "source_file": "college_mathematics.csv",
+   "row_index": 95,
+   "field": "数学",
+   "other_field": "医学",
+   "question": "単位正方形[0,1]×[0,1]内のすべての点(x,y)からなるR^2の部分集合で、xまたはy、あるいはその両方が無理数であるものをSとする。R^2上の標準トポロジーに関して、Sはどうなるか?",
+   "A": "閉",
+   "B": "開",
+   "C": "連結",
+   "D": "完全切断",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "MEr023",
+   "subject": "専門医学",
+   "source_file": "professional_medicine.csv",
+   "row_index": 23,
+   "field": "医学",
+   "other_field": "数学",
+   "question": "あなたが出産前コースを担当した16 歳の高校生が、夜間に 3256g（7ポンド3オンス）の女児をあなたの同僚の介助で出産した。朝の回診で、分娩記録によると、分娩中に軽度の血圧上昇があり、推定第3期出血量は500mLであった。今日の血圧は132/84mmHg、無熱、深部腱反射は正常である。子宮底は硬く、臍の高さにあり、会陰部はわずかに浮腫んでいる。ヘマトクリットは33％。乳児を抱いており、正常な絆が生じているようである。次のうち、管理上最も重要なステップはどれか?",
+   "A": "メチルドパの内服を開始する",
+   "B": "子宮マッサージを実施する",
+   "C": "毎日座浴を指示する",
+   "D": "小児科健診のための教育を行う",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "MEr041",
+   "subject": "専門医学",
+   "source_file": "professional_medicine.csv",
+   "row_index": 41,
+   "field": "医学",
+   "other_field": "数学",
+   "question": "3週間前、45歳の男性が両足の凍傷のため入院した。彼は急速な再加温と足の保護ケアによって治療された。右足の指はすべて黒くなっている。ここ数日、微熱があり、徐々に混乱している。診察の結果、中足部に蜂窩織炎が認められる。最も適切な治療は次のうちどれか?",
+   "A": "切断",
+   "B": "外用コラゲナーゼの塗布",
+   "C": "足趾の壊死した皮膚の剥離",
+   "D": "高圧酸素療法",
+   "answer": "A",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "MEr044",
+   "subject": "専門医学",
+   "source_file": "professional_medicine.csv",
+   "row_index": 44,
+   "field": "医学",
+   "other_field": "数学",
+   "question": "10月に22歳の女性が経過観察のため受診した。体調は良好である。インスリンでコントロールされている1型糖尿病の病歴が2年ある。3ヵ月前のパップスメアは正常で、6ヵ月前に眼科を受診している。67歳の祖母は乳癌である。身長168cm(5 ft 6 in)、体重57kg(125 lb)、BMIは20kg/m2である。ヘモグロビンA1cは6.2％で、血糖値は118mg/dLである。現時点で最も適切な健康維持のための推奨事項は次のうちどれか?",
+   "A": "減量のための食事療法",
+   "B": "ヒトパピローマウイルス検査",
+   "C": "マンモグラフィ",
+   "D": "インフルエンザウイルスワクチン",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "MEr078",
+   "subject": "専門医学",
+   "source_file": "professional_medicine.csv",
+   "row_index": 78,
+   "field": "医学",
+   "other_field": "数学",
+   "question": "会社重役の55歳の男性が腹痛の評価のため入院した。彼は医師には礼儀正しく接するが、看護師や他のスタッフには暴言を吐く。患者の妻と3人の成人した子供のうち2人が面会にやってくる。患者は、「行方不明の子どもは、今も昔も価値がない」とうんざりした様子で言う。この患者の行動の説明として最も可能性が高いのは次のうちどれか?",
+   "A": "投影",
+   "B": "投影的同一視",
+   "C": "反応形成",
+   "D": "分裂",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic",
+    "gemini"
+   ]
+  },
+  {
+   "id": "MEr107",
+   "subject": "専門医学",
+   "source_file": "professional_medicine.csv",
+   "row_index": 107,
+   "field": "医学",
+   "other_field": "数学",
+   "question": "64歳の男性が、2時間前から鼻から鼻血が垂れているとのことで、救急外来を受診した。外傷、最近の上気道炎、鼻血の既往歴は否定している。過去の病歴に異常はなく、薬も服用していない。血圧は180/90mmHgである。鼻腔を診察すると、出血部位は右鼻甲介の中隔粘膜である。次の処置として最も適切なのは次のうちどれか?",
+   "A": "前方パッキング",
+   "B": "鼻に氷湿布を貼る",
+   "C": "カテーテルバルーンタンポナーデ",
+   "D": "鼻腔を5分間つまむこと",
+   "answer": "D",
+   "screen_wrong": [
+    "anthropic"
+   ]
+  },
+  {
+   "id": "MEr119",
+   "subject": "専門医学",
+   "source_file": "professional_medicine.csv",
+   "row_index": 119,
+   "field": "医学",
+   "other_field": "数学",
+   "question": "糖尿病性ケトアシドーシスで入院した3日後、87歳の女性がインスリン注射を拒否した。彼女は、病状が悪化しすぎて、もう生きていたくない、ほとんど目が見えなくなり、両足の切断が必要になるだろうと言う。彼女はいつも活動的な人だったが、これ以上自分の人生に価値があるとは思えないという。家族はおらず、友人もほとんど病気か故人である。精神状態検査では、彼女は意識清明で、協力的である。彼女は自分の病歴を正確に説明し、インスリンを拒否した場合の結果を理解している。うつ病の所見はない。医師が彼女の考えを変えようとしても、その医師は若すぎて自分の状況を理解できないと言って拒否する。彼女は、「私は死ぬとわかっているし、これが私が望むものだ。」と言う。次の管理ステップで最も適切なのは次のうちどれか?",
+   "A": "患者が「医学的助言に反対する」用紙に署名した後、退院させる",
+   "B": "法定後見人を任命する裁判所命令を求める",
+   "C": "インスリンを提供するが、患者がそれを拒否するようにする",
+   "D": "精神科病棟に入院させる",
+   "answer": "C",
+   "screen_wrong": [
+    "anthropic",
+    "openai"
+   ]
+  },
+  {
+   "id": "MEr130",
+   "subject": "専門医学",
+   "source_file": "professional_medicine.csv",
+   "row_index": 130,
+   "field": "医学",
+   "other_field": "数学",
+   "question": "1型糖尿病の37歳男性が、過去2ヵ月間グルコース濃度のコントロールが不十分であったため入院した。コントロール不良にもかかわらず、本人は退院を要求している。本人は、3ヵ月前から疲労感、いらいら感、絶望感があると報告している。彼は、糖尿病の治療法を遵守しておらず、「ときどき忘れてしまう。」という。家族や友人には会いたくないので避けているが、孤独であることは認めている。彼は2日間ベッドから起き上がれず、妻が救急車を呼んで入院させた。入院前の服薬はインスリンだけであったが、彼はしばしば服用を忘れていた。アルコールは飲まない。身長168cm(5 ft 6 in)、体重100kg(220 lb)、BMI36kg/m2。体温は37℃(98.6°F)、脈拍は68/分、呼吸は18/分、血圧は150/85mmHgである。身体所見に異常はない。精神状態検査では、疲労感があり、感情鈍麻がある。自殺念慮は認められない。認知に異常はない。空腹時血清グルコース濃度は120mg/dLである。以下のうち、次の管理ステップで最も適切なのはどれか?",
+   "A": "患者の意向を尊重し、在宅ケアの選択肢について話し合う",
+   "B": "在宅看護に同意することを条件に、患者の意向を尊重する",
+   "C": "神経心理学的検査を予定する",
+   "D": "法定後見人を任命する裁判所命令を求める",
+   "answer": "A",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "PHr065",
+   "subject": "大学物理",
+   "source_file": "college_physics.csv",
+   "row_index": 65,
+   "field": "物理学",
+   "other_field": "会計",
+   "question": "基底状態のヘリウム原子から両方の電子を取り除くのに必要なエネルギーは79.0eVである。ヘリウムを電離させる(すなわち電子を1つ取り除く)のに必要なエネルギーは?",
+   "A": "24.6 eV",
+   "B": "39.5 eV",
+   "C": "51.8 eV",
+   "D": "54.4 eV",
+   "answer": "A",
+   "screen_wrong": [
+    "gemini"
+   ]
+  },
+  {
+   "id": "PHr084",
+   "subject": "大学物理",
+   "source_file": "college_physics.csv",
+   "row_index": 84,
+   "field": "物理学",
+   "other_field": "会計",
+   "question": "次のうち、自由原子のエネルギー準位が関与する遷移を利用するレーザーはどれか?",
+   "A": "ダイオードレーザー",
+   "B": "染料レーザー",
+   "C": "自由電子レーザー",
+   "D": "ガスレーザー",
+   "answer": "D",
+   "screen_wrong": [
+    "gemini"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "note": "AIに渡す数字。verify_problems.py が sources の2ファイルから数え直して照合する",
+ "source": "https://github.com/ai-village-agents/rpg-game  orig = commit ad4f148 (PR #70) / clean = PR #82 (merge e2e8e76 の2番目の親)",
+ "files": {
+  "orig": {"path": "sources/sfx_orig.js", "bytes": 97169, "lines": 228, "spaces": 89647, "space_pct": "92.26", "max_indent": 822, "never_decreases": true,
+   "diffs_43_100": [4,6,6,4,4,4,6,4,4,6,6,4,4,6,6,4,4,6,4,4,6,4,4,6,6,4,4,6,6,4,2,0,0,2,2,2,2,2,2,4,6,4,2,2,2,2,4,6,6,6,6,6,6,6,6,6,6]},
+  "clean": {"path": "sources/sfx_clean.js", "bytes": 8755, "lines": 227, "spaces": 1233, "space_pct": "14.08", "max_indent": 6, "never_decreases": false,
+   "diffs_43_100": [0,2,0,-2,0,0,2,-2,0,2,0,-2,0,2,0,-2,0,2,-2,0,2,-2,0,2,0,-2,0,2,0,-2,0,0,0,2,0,0,0,0,0,2,2,-2,-4,0,0,0,2,2,0,0,0,0,0,0,0,0,0]}
+ },
+ "egg_string_43_100": "EGGEEEGEEGGEEGGEEGEEGEEGGEEGGECAACCCCCCEGECCCCEGGGGGGGGGG",
+ "egg_count_whole_file": 12
+}
