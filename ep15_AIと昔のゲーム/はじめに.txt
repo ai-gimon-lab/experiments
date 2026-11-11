@@ -1,0 +1,65 @@
+ep15 難問を解けるAIが、なぜ昔のカービィで翻弄されたのか — 実測データ
+
+■ 実験の内容
+VideoGameBench（Zhang, Griffiths, Narasimhan, Press, 2026, arXiv:2505.18134 v3）の練習ゲーム「2D Navigation」（10面の小さな迷路、矢印キーで移動、最大6×5マス）を、
+2026年の軽量級AI 2つに解かせた。入力の与え方を3通りに変え、どこまで進めるかと、壁に向かって押した回数を比べた。
+カービィやポケモンは動かしていない。論文の再現ではない（モデルが違い、論文にない条件を足した）。
+
+■ 実施日
+2026年11月5日 23:05 〜 11月6日 00:30（日本時間）。チャンネルの作者のPCから各社のAPIを呼んで実行した。
+
+■ モデル
+- claude-haiku-4-5-20251001（応答したモデルも同じ）
+- gemini-3.5-flash を指定。応答したモデルは gemini-3.6-flash（APIの返す modelVersion）
+- どちらも「思考」なし、温度 0.7（論文と同じ）、出力の上限 600 トークン
+
+■ 条件（同じ迷路・同じモデル・入力だけ変える）
+- A 画像だけ：640×400 の画面画像＋ゲームの目標と操作の説明（論文と同じ形）
+- B 画像＋文字の盤面：A に、盤面を文字（# 壁、. 通路、P 自分、G ゴール）で足す
+- C 文字の盤面だけ：画像なし
+1回の実行＝10面を順に、合計 250 手まで（論文の表4と同じ物差し）。各条件 2 回。合計 12 実行。
+
+■ 主な結果（結果.csv、結果_壁押しの割合.csv）
+到達した面数（10面中）
+- Gemini：A 10・10／B 10・10／C 10・10
+- Haiku ：A 7・9  ／B 10・10／C 10・10
+壁に向かって押した操作の割合
+- Haiku ：A 58.0%（290/500）→ B 20.7%（37/179）→ C 15.8%（32/203）
+- Gemini：A 1.2%（3/253）／B 3.8%（6/156）／C 0.7%（1/147）
+Haiku の A 1回目は、第7面で 183 手を使って抜けられず、同じ壁に向かって左を 40 回続けて押した（生データ_steps.jsonl の job "A_t1"、level 7）。
+
+■ 測る前に書いた読みと、結果
+読み：主因は「画面を読む」ではなく「読めても押せない・確かめない」。
+結果：外れた。文字で盤面を渡すと壁押しが減って完走したので、「自分の位置と壁を読む」所も切れていた。「動かなかったことを確かめない」も本当だった。
+
+■ 弱点（動画では画面の注釈に書いたもの）
+1. 各条件 2 回。差の確からしさは言えない。
+2. 画像は現在の 1 枚だけ（論文は直近数枚）。AIに見せる直近の記録は 10 手（論文は 20 手）。
+3. 出力の上限を 600 トークンにしたため（論文は 2048）、長く考えた回答が途中で切れて、その手は無効（操作なし）になった。
+   Gemini の A では 253 手中 112 手がこれ（第10面は 129 手中 101 手）。Haiku の A では 8 手。
+   到達した面数には影響しないが、Gemini の A の操作数（140・113）は水増しになっている。結果.csv の「うち出力が途中で切れた数」を参照。
+4. 迷路は最大 6×5 マス。カービィなど本物のゲーム画面の読み取りとは別の課題。
+5. 実行中に Gemini の API エラー（SSL、503）が 2 回あり、10 秒待って再試行した（生データ_log.jsonl の status: "error" の行）。結果には含めていない。
+
+■ ファイル
+- 結果.csv：実行ごとの集計（条件×モデル×回）
+- 結果_壁押しの割合.csv：条件×モデルの、壁に向かって押した割合
+- 生データ_log.jsonl：実行ごとの記録（status が ok の行が本番の結果。error の行は API エラーの記録）
+- 生データ_steps.jsonl：1 手ごとの記録（位置、押したキー、結果 moved/blocked/goal/no_effect、AIの考えた文 thought、AIのメモ memory、生の応答 raw）
+- 盤面画像/：各面の開始画面（AIに渡した画像と同じ描画）
+- コード/：
+  - common.py（迷路・描画・入力文・API呼び出し）、run_experiment.py（実行）、verify_problems.py（検算：各面に解があり最短 10 手以内）、analyze.py（集計）
+  - problems.json（10面の盤面。VideoGameBench のリポジトリ configs/calibration_navigation/game.html から取り出した）
+  - game_prompt.txt、system_prompt_dos.txt（AIへの指示文。VideoGameBench のリポジトリの prompt.txt と src/llm/prompts.py の DOS 用をそのまま使用）
+  - LICENSE_videogamebench.txt（上記 3 ファイルの元のライセンス：MIT）
+- 実行には各社の API キー（環境変数 ANTHROPIC_API_KEY、GEMINI_API_KEY）と Python 3.10 以上、requests が必要。画像の描画に外部ライブラリは使っていない。
+
+■ AIへの指示文
+コード/system_prompt_dos.txt（システム文）と コード/game_prompt.txt（ゲームの説明）の全文。
+条件 B・C では、common.py の GRID_NOTE／TEXT_ONLY_NOTE の一文をシステム文の末尾に足している。
+毎手の入力文は common.py の observation_text() のとおり（面の番号、文字の盤面（B・C）、AIのメモ、直近 10 手の行動と考え）。
+
+■ 出典・利用条件
+- 盤面と指示文：alexzhang13/videogamebench（MIT License）。https://github.com/alexzhang13/videogamebench
+- 論文：Zhang, Griffiths, Narasimhan, Press (2026). VideoGameBench: Can Vision-Language Models complete popular video games? arXiv:2505.18134 v3
+- この実験のコードと記録は、チャンネルの作者が Claude と作った。Claude のクラウド環境で組み立て、作者の PC で実行した。
