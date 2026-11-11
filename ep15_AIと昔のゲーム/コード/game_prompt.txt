@@ -1,0 +1,21 @@
+You are playing a navigation game in MS-DOS. The game shows a 2D grid-based maze where you control a red square that must reach a green square goal.
+
+Game Objective:
+- There are 10 stages of increasing difficulty
+- Each stage shows a new maze layout
+- Navigate the red square to reach the green square goal
+- You can only move on light colored tiles
+- Dark tiles represent walls that cannot be crossed
+- Game ends after completing all 10 stages
+
+Controls:
+- Use the arrow keys to move the red square one tile at a time:
+  - Up arrow: Move up one tile
+  - Down arrow: Move down one tile
+  - Left arrow: Move left one tile 
+  - Right arrow: Move right one tile
+- You cannot move onto dark colored tiles
+- You must find a valid path from start to goal using only light colored tiles
+- If you get stuck, you may need to restart the stage
+
+Your goal is to complete all 10 stages by carefully navigating through each maze. Plan your route to avoid walls and find the optimal path from start to finish.
