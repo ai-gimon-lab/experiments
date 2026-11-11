@@ -1,0 +1,51 @@
+ep16 AIだけの村 ― 「従う瞬間」の判断を数えた実測
+
+■ 実験の内容
+原典（Dai ほか「Artificial Leviathan: Exploring Social Evolution of LLM Agents Through the Lens of Hobbesian Social Contract Theory」arXiv:2406.14373v4／Frontiers in Physics 14:1700712, 2026）が公開している指示文（付録A＝村の一般説明、付録C＝奪われたときの応答）を英文のまま使い、「奪われた瞬間に従う（CONCEDE）か抵抗する（RESIST）か」の判断だけをAIに答えさせて数えた。
+村のシミュレーション全体の再現ではない。1場面の判断だけである。
+
+確かめたかったこと（測る前に書いた読み）：AIを従わせているのは「この相手に負けた」という記憶であり、付録Cの指針の2文（「この相手に負けたことがなければ従いたくないだろう／何度も負けたときだけ従うのが正しい」）は後押しにすぎないのではないか。
+
+■ 条件
+・条件a「文あり」：付録Cをそのまま使う
+・条件b「文なし」：付録Cから指針の2文だけを抜く（ほかは同一。コード/verify_problems.py で「2文抜き以外は同一」を検算している）
+・振った変数：記憶（直近30件）に入れる「Person 2 に抵抗して負けた回数」＝0・1・2・3・5回。負けは直近の日に置き、残りは耕作・食事の無害な記録で埋めた
+・固定した値：自分＝Person 5（強さ0.55、食料2、土地10、攻撃性0、貪欲1.25、社会的地位7）、奪う相手＝Person 2。「栄光への欲求」は "moderate" と置いた（原典に値の記載がない）。相手の強さはプロンプトに入れていない（原典の付録Cにも無い）
+・出力は CONCEDE／RESIST の1語。どちらでもない回答は「判定不能」
+・各条件・各負け数につき16回。温度は各社の既定値（下げていない）
+・モデル：claude-haiku-4-5-20251001／gpt-5.6-luna／gemini-3.5-flash-lite（応答したモデル名は指定と同じ。生データの model_served 列）
+・合計：2条件×5段階×16回×3モデル＝480回。失敗0、判定不能0
+
+■ 実施日
+2026-11-05（下見30回のあと、本番480回。Claude のクラウド環境でコードを作り、チャンネルの作者のPCから各社のAPIを直接呼び出した）
+
+■ 主な結果（従った割合。3モデル合計、各48回）
+負けた回数    文あり（原典どおり）   文なし（2文を抜く）
+0回           2.1%（1/48）          12.5%（6/48）
+1回           6.2%（3/48）          27.1%（13/48）
+2回           62.5%（30/48）        54.2%（26/48）
+3回           85.4%（41/48）        70.8%（34/48）
+5回           97.9%（47/48）        87.5%（42/48）
+・2文を抜いても、負けが増えるほど従う。読みは当たった（文は「坂を急にする」働き。負けが少ないうちは従わせず、5回負けるとほぼ全員を従わせる）
+・モデル別の値は 結果.csv。3モデルとも向きは同じだが細部は違う（gpt-5.6-luna は負け2回で跳ね上がる、gemini は負け3回まで動かない、haiku は文なし・負け0回でも37.5%が従う）
+
+■ 弱点（動画で音声にしていないものを含む）
+・モデルが原典（GPT-3.5 Turbo、2024年）と違う
+・記憶の中身はこちらが作ったもの。原典は村で実際に起きた記録
+・「栄光への欲求」の値は置いたもの
+・1場面の判断であり、原典の「21日で全員が従う」までの連鎖は測っていない
+・haiku は毎回400字前後の理由を書く。gpt-5.6-luna と gemini は1語だけで、理由は読めない
+・原典のコードと全ログは非公開（レビューのためGitHubリンクを伏せた旨の記載）。原典の数え直しはしていない
+
+■ ファイル
+・結果.csv：モデル×条件×負け回数の集計（UTF-8 BOM付き）
+・生データ_log.jsonl：480行。1行＝1回の呼び出し。列：time／provider／model／condition（a=文あり、b=文なし）／losses（負けた回数）／trial／ok／raw（モデルの生の回答）／answer（CONCEDE・RESIST・UNKNOWN）／stop／model_served／in_tokens／out_tokens
+・コード/prompts.py：原典の付録A・付録Cの英文（変数を固定値で埋める）と、記憶の作り方
+・コード/run_experiment.py：実行（再開可能）
+・コード/analyze.py：集計
+・コード/verify_problems.py：検算（記憶30件・負けの数・条件bが2文抜きだけになっているか）
+・実行に必要なもの：Python 3.10 以上、requests。環境変数 ANTHROPIC_API_KEY／OPENAI_API_KEY／GEMINI_API_KEY。モデル名は run_experiment.py の MODELS で変えられる
+
+■ 出典
+・Gordon Dai, Weijia Zhang, Jinhan Li, Siqi Yang, Chidera Onochie lbe, Srihas Rao, Arthur Caetano, Misha Sra. "Artificial Leviathan: Exploring Social Evolution of LLM Agents Through the Lens of Hobbesian Social Contract Theory." arXiv:2406.14373（v4, 2026-10-24）https://arxiv.org/abs/2406.14373 ／ Frontiers in Physics 14:1700712（2026-06-16）https://doi.org/10.3389/fphy.2026.1700712
+・指示文の英文は原典の付録A・Cからの引用。著作権は原典の著者にある（本フォルダでは実測の再現に必要な範囲で引用している）
